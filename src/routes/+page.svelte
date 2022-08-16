@@ -1,3 +1,7 @@
+<script context="module">
+  import { goto } from "$app/navigation";
+</script>
+
 <section
   class="flex min-h-screen bg-white justify-between items-center flex-col p-5 w-full"
 >
@@ -6,13 +10,14 @@
   </h1>
   <img src="./gory.png" alt="Obrazek gór" />
   <div class="space-y-2 w-full">
+    <a href="/auth/login">
+      <button class="btn">Zaloguj</button>
+    </a>
     <button
-      class="rounded-lg shadow border-2 bg-zhpg-light text-white p-2 w-full font-bold font-sans"
-      >Zaloguj</button
-    >
-    <button
-      class="rounded-lg shadow border-2 bg-zhpg-light text-white p-2 w-full font-bold font-sans"
-      >Załóż konto</button
+      on:click={() => {
+        goto("/auth/register/");
+      }}
+      class="btn-outline">Załóż konto</button
     >
   </div>
 </section>

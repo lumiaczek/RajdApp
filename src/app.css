@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.input {
+    @apply w-full outline-none rounded shadow border-2 border-zhpg-light px-4 py-2 
+}
+
+.btn {
+    @apply rounded-lg shadow border-2 text-white p-2 w-full font-bold font-sans bg-zhpg-light border-zhpg-light focus:border-zhpg-light
+}
+.btn-outline {
+    @apply rounded-lg shadow border-2 border-zhpg-light text-zhpg-light p-2 w-full font-bold font-sans focus:border-zhpg-light
+}

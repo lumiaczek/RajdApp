@@ -12,7 +12,12 @@
   },
   "tauri": {
     "allowlist": {
-      "all": true
+      "all": true,
+      "http": {
+        "all": true,
+        "request": true,
+        "scope": ["https://**", "http://**"]
+      }
     },
     "bundle": {
       "active": true,
@@ -57,9 +62,9 @@
       {
         "fullscreen": false,
         "height": 600,
-        "resizable": true,
+        "resizable": false,
         "title": "RajdApp",
-        "width": 800
+        "width": 400
       }
     ]
   }
